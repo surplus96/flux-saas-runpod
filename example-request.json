@@ -1,0 +1,64 @@
+{
+  "basic_request": {
+    "prompt": "Cinematic shot of a premium SUV parked in a modern urban street at sunset, volumetric lighting, ultra realistic",
+    "negative_prompt": "blurry, distorted, low quality, text, watermark",
+    "cfg": 3,
+    "steps": 25,
+    "seed": 257028587768984,
+    "object_image_url": "https://raw.githubusercontent.com/github/explore/main/topics/car/car.png",
+    "object_label": "car",
+    "canvas": {
+      "board": {
+        "width": 1344,
+        "height": 768,
+        "background": "black"
+      },
+      "image_states": [
+        {
+          "x": 672,
+          "y": 384,
+          "scaleX": 0.78,
+          "scaleY": 0.78,
+          "rotation": 0
+        }
+      ]
+    }
+  },
+  "backplate_request": {
+    "prompt": "High-end automobile integrated into a lifestyle backplate, precise reflections, photo-real lighting",
+    "negative_prompt": "blurry, distorted, low quality, text, watermark",
+    "cfg": 3,
+    "steps": 22,
+    "seed": 257028587768984,
+    "backplate_key": "demo/backplate.png",
+    "backplate_image_url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&w=1600",
+    "object_key": "demo/object.png",
+    "object_image_url": "https://raw.githubusercontent.com/github/explore/main/topics/car/car.png",
+    "object_label": "car",
+    "canvas": {
+      "board": {
+        "width": 1280,
+        "height": 720,
+        "background": "black"
+      },
+      "image_states": [
+        {
+          "x": 640,
+          "y": 360,
+          "scaleX": 0.33,
+          "scaleY": 0.33,
+          "rotation": 0
+        }
+      ]
+    },
+    "mask_options": {
+      "threshold": 0.3,
+      "detail_erode": 6,
+      "detail_dilate": 6
+    },
+    "blend": {
+      "ratio": 1.0
+    }
+  }
+}
+
