@@ -26,9 +26,9 @@ RUN comfy model download --url https://huggingface.co/uwg/upscaler/resolve/main/
  && comfy model download --url https://huggingface.co/ffxvs/vae-flux/resolve/main/ae.safetensors \
         --relative-path models/vae --filename ae.safetensors
 
-RUN mkdir -p /comfyui/models/unet \
- && curl -L "https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev/resolve/main/flux1-kontext-dev.safetensors?download=true" \
-        -o /comfyui/models/unet/flux1-dev-kontext.safetensors
+RUN python -m pip install --no-cache-dir gdown \
+ && gdown --quiet --id 1pjmbNQeyViD67IxP9EfRuPqIMsMF5PaT \
+        -O /comfyui/models/unet/flux1-dev-kontext.safetensors
 
 # ----- 핸들러/워크플로 파일 포함 -----
 WORKDIR /opt/flux
