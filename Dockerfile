@@ -40,6 +40,6 @@ COPY docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # 기본 워크플로 선택 값 (필요 시 Runpod 템플릿에서 override)
-ENV WORKFLOW_TARGET=basic
+ENV WORKFLOW_TARGET=backplate
 
 CMD ["/entrypoint.sh"]
